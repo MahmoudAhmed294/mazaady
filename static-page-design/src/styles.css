@@ -1,0 +1,50 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: Tajawal;
+  src: url("assets/fonts/Tajawal-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Tajawal;
+  src: url("assets/fonts/Tajawal-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Tajawal;
+  src: url("assets/fonts/Tajawal-Regular.ttf");
+  font-weight: 400;
+}
+
+body {
+  font-family: Tajawal;
+  direction: rtl;
+  font-weight: 400;
+  text-align: right;
+}
+
+.transition-all {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.2s ease-in-out;
+}
+
+.open .transition-all {
+  transform: scaleY(1);
+}
+.dropDown-shadow {
+  box-shadow: 0px 3px 6px #fff4e8;
+}
+.searchPlaceHolder::placeholder {
+  color: #323232;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.languageSelect {
+  background: transparent
+    radial-gradient(closest-side at 50% 50%, #fdbc01 0%, #fdba03 31%, #ff951d 100%) 0% 0% no-repeat
+    padding-box;
+}
